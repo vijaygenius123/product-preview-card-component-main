@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+<div class="container">
+    <div class="card">
+        <img class="card--img" src="./images/image-product-desktop.jpg" alt="">
+        <div class="card--content">
+            <h5 class="card--sub-header">PERFUME</h5>
 
-  Preview
+            <h2 class="card--header">Gabrielle Essence Eau De Parfum</h2>
 
-  Gabrielle Essence Eau De Parfum
+            <p>
+                A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                Perfumer-Creator for the House of CHANEL.
+            </p>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+            <div class="card--price-container">
+                <span class="card--price-container--new">$149.99</span>
+                <span class="card--price-container--old">$169.99</span>
+            </div>
 
-  $149.99
-  $169.99
+            <button class="btn" type="button">
+                <img src="./images/icon-cart.svg" alt="">
+                Add to Cart
+            </button>
 
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        </div>
+    </div>
+</div>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Vijayaraghavan Sundararaman</a>.
+</div>
 </body>
 </html>

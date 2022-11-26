@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --var-color-primary-cream: hsl(30, 38%, 92%);
+    --var-color-primary-cyan: hsl(158, 36%, 37%);
+    --var-color-primary-cyan-hover: hsl(158, 36%, 22%);
+    --var-color-dark-blue: hsl(212, 21%, 14%);
+    --var-color-grayish-blue: hsl(228, 12%, 48%);
+    --var-color-white: hsl(0, 0%, 100%);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background: var(--var-color-primary-cream);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+}
+
+.card {
+    max-width: 40%;
+    max-height: 50%;
+    display: flex;
+}
+
+.card--img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 1em 0 0 1em;
+    -moz-border-radius-topleft: 1em;
+    -moz-border-radius-bottomleft: 1em;
+}
+
+.card--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 2em;
+    background: var(--var-color-white);
+    border-radius: 0 1em 1em 0;
+}
+
+.card--sub-header {
+    font-family: 'Montserrat', "PT Sans", serif;
+    letter-spacing: 0.3em;
+    color: grey;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.card--header {
+    font-family: "Fraunces", SansSerif, serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.card--content p {
+    font-size: 14px;
+    font-family: 'Montserrat', "PT Sans", serif;
+    color: grey;
+    padding: 0;
+}
+
+.card--price-container {
+    margin: 0.5em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card--price-container--new {
+    font-size: 2em;
+    color: var(--var-color-primary-cyan);
+    font-family: "Fraunces", SansSerif, serif;
+}
+
+.card--price-container--old {
+    text-decoration: line-through;
+    color: grey;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 1em 0.5em;
+    outline: none;
+    background: var(--var-color-primary-cyan);
+    border: none;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--var-color-white);
+    font-family: 'Montserrat', "PT Sans", serif;
+    font-size: 1em;
+    gap: 1em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--var-color-primary-cyan-hover);
+}
